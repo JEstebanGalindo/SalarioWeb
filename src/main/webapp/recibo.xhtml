@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Recibo</title>
+    </h:head>
+    <h:body>
+        <H2>RECIBO DE PAGO</H2>
+        <form>
+            <h:outputText value="#{recibo.cuenta.genero}: "/>
+            <h:outputText value ="#{recibo.cuenta.nombre} "/>
+            <h:outputText value ="#{recibo.cuenta.apellido} "/>
+            <br></br><br></br>
+            <h:outputText value="Por su profesion... "/>
+            <h:outputText value="#{recibo.cuenta.profesion}"/>
+            <br></br><br></br>
+            <h:outputText value="y sus idiomas... "/>
+            <h:outputText value="#{recibo.idiomasConcatenados}"/>
+            <br></br><br></br>
+            <h:outputText value="ubicacion..."/>
+            <h:outputText value="#{recibo.cuenta.ubicacion}"/>
+            <br></br><br></br>
+            <h:outputText value="y los dias trabajados... "/>
+            <h:outputText value="#{recibo.cuenta.dias}"/>
+            <br></br><br></br>
+            <h:outputText value="Su sueldo es... "/>
+            <h:outputText value="#{recibo.sueldo}"/>
+            <br></br><br></br><br></br><br></br>
+        </form>
+    </h:body>
+</html>
+
